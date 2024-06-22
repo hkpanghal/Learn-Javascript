@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+        }
+
+        .color-name{
+            text-align: center;
+        }
+        
+        .options{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+           
+        }
+        .options div{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-radius: 10px;
+
+        }
+        .options div:hover{
+            scale: 1.1;
+            transition: all ease 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="score">Score : 0 </h2>
+    <main>
+        <div class="color-name">
+            <h1 class="color-code">rgb(222,255,255)</h1>
+        </div>
+        <div class="options">
+            <div class="op" id="1"></div>
+            <div class="op" id="2"></div>
+            <div class="op" id="3"></div>
+            <div class="op" id="4"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button" style="padding: 10px 20px; margin: 30px;">
+        Create
+    </button>
+    <div class="container">
+        
+    </div>
+
+    <script>
+        const button = document.getElementById("button")
+        const container = document.querySelector(".container")
+        let count = 1
+        button.addEventListener("click",() => {
+            h1 = document.createElement("h1")
+            h1.innerText = "Hello" + count
+            container.appendChild(h1)
+            count++
+        })
+    </script>
+</body>
+</html>

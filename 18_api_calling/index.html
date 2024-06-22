@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="input-box">
+        <button id="search-btn">Search</button>
+    </div>
+
+    <div class="screen">
+       <div class="header">
+        <h3 id="country">Country : </h3>
+        <h3 id="location">Location : </h3>
+        <h3 id="region">Region : </h3>
+       </div>
+       <div class="details">
+
+        <img id="icon" src="" alt="">
+        <h2 id="condition">Condition</h2>
+        <h2 id="temp">Temp</h2>
+
+       </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

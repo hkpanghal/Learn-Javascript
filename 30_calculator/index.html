@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          color:white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+         html,body {
+          height: 100%;
+          width: 100%;
+        }
+
+        main{
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .calculator{
+            height: 60%;
+            width: 20em;
+           
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.5);
+            
+        }
+        .screen{
+            height: 20%;
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+       .input{
+        height: 50%;
+       }
+        input{
+            border: none;
+            background-color: transparent;
+            outline: none;
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        .ans{
+            color: rgba(255, 255, 255, 0.5);
+            height: 50%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .calculation{
+           
+            margin: 10px 0;
+            height: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5px;
+            
+        }
+        .numpad{
+            height: 100%;
+            width: 70%;
+            
+           
+        }
+        .row{
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .num , .op{
+            box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.5);
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+        }
+
+        .op{
+            height: 52px;
+            width: 52px;
+            
+        }
+        .num:hover{
+            background-color: tomato;
+            cursor: pointer;
+        }
+        .op:hover{
+            background-color: tomato;
+            cursor: pointer;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <main>
+        <div class="calculator">
+            <div class="screen">
+                <div class="input">
+                    <input type="text" placeholder="Type here....">
+                </div>
+                <div class="ans">
+                    Ans : 
+                </div>
+            </div>
+    
+            <div class="calculation">
+                <div class="numpad">
+                    <div class="row row1">
+                        <div class="num7 num btn">9</div>
+                        <div class="num8 num btn">8</div>
+                        <div class="num9 num btn">7</div>
+                    </div>
+                    <div class="row row2">
+                        <div class="num4 num btn">6</div>
+                        <div class="num5 num btn">5</div>
+                        <div class="num6 num btn">4</div>
+                    </div>
+                    <div class="row row3">
+                        <div class="num1 num btn">3</div>
+                        <div class="num2 num btn">2</div>
+                        <div class="num3 num btn">1</div>
+                    </div>
+                    <div class="row row4">
+                        <div class="num num0 btn">0</div>
+                        <div class="num btn">X</div>
+                    </div>
+                </div>
+                <div class="operators">
+
+                    <div class="op1 op btn">C</div>
+                    <div class="op1 op btn">/</div>
+                    <div class="op2 op btn">*</div>
+                    <div class="op3 op btn">-</div>
+                    <div class="op4 op btn">+</div>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
