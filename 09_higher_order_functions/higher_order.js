@@ -18,11 +18,12 @@
 //     console.log(addedValue)
 // })
 
-const add = (num1,num2) => {
-    const result = num1 + num2
+// const add = (num1,num2) => {
+//     const result = num1 + num2
     
-    return () => console.log(result)
-}
+//     return () => console.log(result)
+// }
 
-const result = add(10,15)
-result()
+// const result = add(10,15)
+// result()
+
